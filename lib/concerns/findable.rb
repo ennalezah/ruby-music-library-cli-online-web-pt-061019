@@ -10,7 +10,7 @@ module Concerns
     
     def create(name) 
       object = Class.new(name)
-      objct.save
+      object.save
       object
     end
     

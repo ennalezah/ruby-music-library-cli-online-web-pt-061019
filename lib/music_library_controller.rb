@@ -89,6 +89,7 @@ class MusicLibraryController
   end
   
   def play_song 
+<<<<<<< HEAD
     puts "Which song number would you like to play?"
     song_num = gets.strip.to_i
     
@@ -96,6 +97,10 @@ class MusicLibraryController
       listed = Song.all.sort {|a, b| a.name <=> b.name}
       puts "Playing #{listed[song_num-1].name} by #{listed[song_num-1].artist.name}"
     end
+=======
+    list_songs
+    puts "Please put a song number:"
+>>>>>>> e6965cdb6e51cf3ebef44d8c3394c87fd33dc4ce
   end
 
 end # end of class
